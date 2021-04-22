@@ -1,0 +1,258 @@
+<!-- Image and text -->
+<!-- <nav class="navbar navbar-primary bg-primary" >
+    <a class="navbar-brand" href="#">
+      <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+      Legacies Techno
+    </a>
+</nav> -->
+
+
+<mat-progress-bar *ngIf="show" mode="indeterminate"></mat-progress-bar>
+
+
+<div class="grid-fluid">
+    <div class="sidebar">
+        
+      <br>
+      <div><h1><b>LEGACIES TECHNO</b></h1></div><br><br>
+      <div class="menus">
+        <div> <img src="assets/assignment_icons/dashboard (5) 1.svg" alt=""> Dashboard </div>
+        <div> <img src="assets/assignment_icons/Group (4).svg" alt=""> Notes </div>
+        <div> <img src="assets/assignment_icons/settings (2) 1.svg" alt=""> Settings </div>
+        <div> <img src="assets/assignment_icons/user 2.svg" alt=""> Profile </div>
+      </div>
+     
+        
+        
+        <!-- <div class="menus">
+            <div>Country</div>
+
+            <div>
+                <mat-expansion-panel hideToggle>
+                    <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Date
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        From 18 Apr 2021
+                    </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div>
+                        <p>To</p>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Choose a date</mat-label>
+                            <input matInput [matDatepicker]="picker">
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                </mat-expansion-panel>
+            </div>
+            <div>
+                <mat-expansion-panel hideToggle>
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        Time Period
+                      </mat-panel-title>
+                      <mat-panel-description>
+                        1h to 24h  or 1D, 2D...
+                      </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput value="1" type="number">
+                        </mat-form-field>
+                        <mat-radio-group aria-label="Select an option">
+                        <mat-radio-button value="H">Hours</mat-radio-button>
+                        <mat-radio-button value="D">Days</mat-radio-button>
+                        </mat-radio-group>    
+                    </div>
+                  </mat-expansion-panel>
+            </div>
+            <div>
+                <mat-expansion-panel hideToggle>
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        Intervals 
+                      </mat-panel-title>
+                      <mat-panel-description>
+                        1h,3h,6h,12h,24h
+                      </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div>
+                        <mat-radio-group aria-label="Select an option">
+                            <mat-radio-button value="1h">1h</mat-radio-button>
+                            <mat-radio-button value="3h">3h</mat-radio-button>
+                            <mat-radio-button value="6h">6h</mat-radio-button>
+                            <mat-radio-button value="12h">12h</mat-radio-button>
+                            <mat-radio-button value="24h">24h</mat-radio-button>
+                        </mat-radio-group>    
+                    </div>
+                  </mat-expansion-panel>
+            </div>
+            <div>
+                <mat-expansion-panel hideToggle>
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        Unit
+                      </mat-panel-title>
+                      <mat-panel-description>
+                        hours or mins
+                      </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div>
+                        <mat-radio-group aria-label="Select an option">
+                            <mat-radio-button value="h">hours</mat-radio-button>
+                            <mat-radio-button value="min">min</mat-radio-button>
+                           
+                        </mat-radio-group>    
+                    </div>
+                  </mat-expansion-panel>
+            </div>
+        </div> -->
+    </div>
+    <div class="flow-chart">
+       <div class="chart-flex1">
+         <br><br>
+         <div class="chart-flex1-inside1"><p><b>Weather Forecast</b></p></div>
+         <div class="chart-flex1-inside2">
+           <div (click)="changeCity('karur')" style="display:flex;flex-direction: column;height: 100%;">
+
+            <mat-card><img mat-card-image src="https://img.traveltriangle.com/blog/wp-content/uploads/2020/03/Places-To-Visit-In-Turkey-_7th-jun.jpg" alt="">
+            </mat-card>
+            <h1>Karur</h1>
+
+           </div>
+          
+           <div (click)="changeCity('bengaluru')" style="display:flex;flex-direction: column;">
+            <mat-card><img mat-card-image src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2020/03/Princes%E2%80%99-Island_7th-jun.jpg" alt="">
+            </mat-card>
+            <h1>Banglore</h1>
+           </div>
+           <div (click)="changeCity('salem')" style="display:flex;flex-direction: column;">
+            <mat-card><img mat-card-image src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2020/03/Butterfly-Valley_5th-jun.jpg" alt="">
+            </mat-card>
+            <h1>Salem</h1>
+           </div>
+           <div (click)="changeCity('chennai')" style="display:flex;flex-direction: column;">
+            <mat-card><img mat-card-image src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2020/03/Hagia-Sophia-Museum_7th-jun1.jpg" alt="">
+            </mat-card>
+            <h1>Chennai</h1>
+           </div>
+           <div (click)="changeCity('mumbai')" style="display:flex;flex-direction: column;">
+            <mat-card><img mat-card-image src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2020/03/Princes%E2%80%99-Island_7th-jun.jpg" alt="">
+            </mat-card>
+            <h1 style="color: black;">Mumbai</h1>
+           </div>
+           <div (click)="changeCity('trichy')" style="display:flex;flex-direction: column;">
+            <mat-card><img mat-card-image src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2020/03/Princes%E2%80%99-Island_7th-jun.jpg" alt="">
+            </mat-card>
+            <h1>Trichy</h1>
+           </div>
+           <div (click)="changeCity('goa')" style="display:flex;flex-direction: column;">
+            <mat-card><img mat-card-image src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2020/03/Hagia-Sophia-Museum_7th-jun1.jpg" alt="">
+            </mat-card>
+            <h1>Goa</h1>
+           </div>
+           <div (click)="changeCity('gujarat')" style="display:flex;flex-direction: column;">
+            <mat-card><img mat-card-image src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2020/03/Hagia-Sophia-Museum_7th-jun1.jpg" alt="">
+            </mat-card>
+            <h1>Gujarat</h1>
+           </div>
+           <div (click)="changeCity('delhi')" style="display:flex;flex-direction: column;">
+            <mat-card><img mat-card-image src="https://img.traveltriangle.com/blog/wp-content/uploads/2020/03/Places-To-Visit-In-Turkey-_7th-jun.jpg" alt="">
+            </mat-card>
+            <h1>Delhi</h1>
+           </div>
+           <div (click)="changeCity('london')" style="display:flex;flex-direction: column;">
+            <mat-card><img mat-card-image src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2020/03/Hagia-Sophia-Museum_7th-jun1.jpg" alt="">
+            </mat-card>
+            <h1>London</h1>
+           </div>
+           <div (click)="changeCity('canada')" style="display:flex;flex-direction: column;">
+            <mat-card><img mat-card-image src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2020/03/Princes%E2%80%99-Island_7th-jun.jpg" alt="">
+            </mat-card>
+            <h1>Canada</h1>
+           </div>
+           <!-- <mat-card>simeple</mat-card> -->
+         </div>
+       </div>
+       <div class="chart-flex2">
+        <div style="display:flex;flex-direction: row;align-items: center;" class="chart-flex2-inside1"><p><b>{{location}}</b></p>
+      
+        </div>  
+        <div class="chart-flex2-inside2">
+          <mat-card *ngFor="let forecastday of forecastdays">
+            <img style="width: 50%;margin-left: 10%;" mat-card-image src="{{forecastday.day.condition.icon}}" alt="">
+            <mat-card-content>
+              <p></p> 
+              <p>{{forecastday.day.condition.text}}</p>
+            </mat-card-content>
+            <mat-card-subtitle>{{forecastday.date | date: 'dd/MM/yyyy'}}</mat-card-subtitle>
+
+          </mat-card>
+           <!-- <mat-card>
+            <mat-card-title>Agra</mat-card-title>
+          </mat-card>
+
+          <mat-card>
+            <mat-card-title>Banglore</mat-card-title>
+          </mat-card>
+          <mat-card>
+            <mat-card-title>Salem</mat-card-title>
+          </mat-card>
+          <mat-card>
+            <mat-card-title>Chennai</mat-card-title>
+          </mat-card>
+          <mat-card>
+            <mat-card-title>Mumbai</mat-card-title>
+          </mat-card>
+          <mat-card>
+            <mat-card-title>Mumbai</mat-card-title>
+          </mat-card>
+          <mat-card>
+            <mat-card-title>Mumbai</mat-card-title>
+          </mat-card>
+          <mat-card>
+            <mat-card-title>Mumbai</mat-card-title>
+          </mat-card>
+          <mat-card>
+            <mat-card-title>Mumbai</mat-card-title>
+          </mat-card>
+          <mat-card>
+            <mat-card-title>Mumbai</mat-card-title>
+          </mat-card>
+          <mat-card>
+            <mat-card-title>Mumbai</mat-card-title>
+          </mat-card>
+          <mat-card>
+            <mat-card-title>Mumbai</mat-card-title>
+          </mat-card>
+          <mat-card>
+            <mat-card-title>Mumbai</mat-card-title>
+          </mat-card>
+          <mat-card>
+            <mat-card-title>Mumbai</mat-card-title>
+          </mat-card>
+          <mat-card>
+            <mat-card-title>Mumbai</mat-card-title>
+          </mat-card>
+          <mat-card>
+            <mat-card-title>Mumbai</mat-card-title>
+          </mat-card>
+          <mat-card>
+            <mat-card-title>Mumbai</mat-card-title>
+          </mat-card> -->
+        </div>
+       </div>
+       <div class="chart-flex3">
+        <div class="chart-flex3-inside1"><p><b>Weather Graph</b></p></div>
+        <div class="chart-flex3-inside2">
+          <div class="chart-container" style="position: relative; height:10vh; width:70vw">    
+            <canvas id="canvas">{{ Linechart }}</canvas>    
+          </div>  
+        </div>
+       </div>
+    </div>
+</div>
